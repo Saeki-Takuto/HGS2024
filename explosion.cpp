@@ -5,6 +5,7 @@
 //
 //==================================================================
 
+#include "bullet.h"
 #include "explosion.h"
 #include "main.h"
 #include "Explosion.h"

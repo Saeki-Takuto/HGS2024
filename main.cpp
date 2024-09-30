@@ -6,15 +6,19 @@
 //==================================================================
 
 #include "main.h"
+#include "player.h"
 #include "back.h"
 #include "input.h"
+#include "bullet.h"
 #include "explosion.h"
+#include "enemy.h"
 #include "title.h"
 #include "game.h"
 #include "result.h"
 #include "fade.h"
 #include "sound.h"
 #include "ranking.h"
+#include "Bsod.h"
 #include "tutorial.h"
 
 //グローバル変数宣言
@@ -348,6 +352,9 @@ void Update(void)
 	case MODE_RANKING://ランキング
 		UpdateRanking();
 		break;
+	case MODE_BSOD://ブルースクリーン
+		UpdateBsod();
+		break;
 	case MODE_TUTORIAL://チュートリアル
 		UpdateTutorial();
 		break;
@@ -384,6 +391,9 @@ void Draw(void)
 		case MODE_RANKING://ランキング画面
 			DrawRanking();
 			break;
+		case MODE_BSOD://ブルースクリーン
+			DrawBsod();
+			break;
 		case MODE_TUTORIAL://チュートリアル
 			DrawTutorial();
 			break;
@@ -394,7 +404,11 @@ void Draw(void)
 
 #ifdef _DEBUG
 
+		Player* pPlayer;
+
 		int nCntPlayer;
+
+		pPlayer = GetPlayer();
 
 		DrawDEBUG(NULL,NULL,NULL);
 
@@ -426,6 +440,9 @@ void SetMode(MODE mode)
 	case MODE_RANKING://ランキング画面
 		UninitRanking();
 		break;
+	case MODE_BSOD://ブルースクリーン
+		UninitBsod();
+		break;
 	case MODE_TUTORIAL://チュートリアル
 		UninitTutorial();
 		break;
@@ -445,6 +462,9 @@ void SetMode(MODE mode)
 		break;
 	case MODE_RANKING://ランキング画面
 		InitRanking();
+		break;
+	case MODE_BSOD://ブルースクリーン
+		InitBsod();
 		break;
 	case MODE_TUTORIAL://チュートリアル
 		InitTutorial();

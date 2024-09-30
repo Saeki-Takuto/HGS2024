@@ -6,9 +6,12 @@
 //==================================================================
 
 #include "main.h"
+#include "player.h"
 #include "back.h"
 #include "input.h"
+#include "bullet.h"
 #include "explosion.h"
+#include "enemy.h"
 #include "title.h"
 #include "game.h"
 #include "result.h"

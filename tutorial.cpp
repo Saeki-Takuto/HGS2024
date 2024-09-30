@@ -10,8 +10,11 @@
 #include "fade.h"
 #include "sound.h"
 #include "game.h"
+#include "bullet.h"
 #include "effect.h"
+#include "player.h"
 #include "particle.h"
+#include "enemy.h"
 #include "score.h"
 
 //グローバル変数
@@ -76,17 +79,40 @@ void InitTutorial(void)
 	//サウンドの設定
 	PlaySound(SOUND_LABEL_BGM06);
 
+	//弾の初期化処理
+	InitBullet();
+
 	//エフェクトの初期化処理
 	InitEffect();
+
+	//プレイヤーの初期化処理
+	InitPlayer();
 
 	InitParticle();
 
 	InitScore();
+
+	//敵の初期化処理
+	InitEnemy();
+
+	SetEnemy(D3DXVECTOR3(200.0f, 250.0f, 0.0f), 2, 50);
+	SetEnemy(D3DXVECTOR3(200.0f, 650.0f, 0.0f), 3, 50);
+	SetEnemy(D3DXVECTOR3(1400.0f, 250.0f, 0.0f),4, 50);
+	SetEnemy(D3DXVECTOR3(1400.0f, 650.0f, 0.0f),5, 50);
 }
 
 //タイトル画面の終了処理
 void UninitTutorial(void)
 {
+	//敵の終了処理
+	UninitEnemy();
+
+	//プレイヤーの終了処理
+	UninitPlayer();
+
+	//弾の終了処理
+	UninitBullet();
+
 	//エフェクトの終了処理
 	UninitEffect();
 
@@ -114,14 +140,25 @@ void UninitTutorial(void)
 //タイトル画面の更新処理
 void UpdateTutorial(void)
 {
-	if (KeyboardTrigger(DIK_RETURN) == true || GetJoypadPress(JOYKEY_Y))
+	int nNum = GetNumEnemy();
+
+	if (KeyboardTrigger(DIK_RETURN) == true || GetJoypadPress(JOYKEY_Y)||nNum<=0)
 	{//決定キー(ENTERキー)が押された
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_GAME);
 	}
 
+	//弾の更新処理
+	UpdateBullet();
+
 	//エフェクトの更新処理
 	UpdateEffect();
+
+	//プレイヤーの更新処理
+	UpdatePlayer();
+
+	//敵の更新処理
+	UpdateEnemy();
 
 	//パーティクルの更新処理
 	UpdateParticle();
@@ -150,6 +187,16 @@ void DrawTutorial(void)
 	//プレイヤーの描画
 	pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
 
+	//弾の描画処理
+	DrawBullet();
+
 	//エフェクトの描画処理
 	DrawEffect();
+
+	//プレイヤーの描画処理
+	DrawPlayer();
+
+	//敵の描画処理
+	DrawEnemy();
+
 }

@@ -10,6 +10,8 @@
 #include "Effect.h"
 #include "input.h"
 #include "explosion.h"
+#include "enemy.h"
+#include "player.h"
 #include "score.h"
 
 //マクロ定義
@@ -146,10 +148,18 @@ void UpdateEffect(void)
 			g_aEffect[nCntEffect].pos.y += g_aEffect[nCntEffect].move.y;
 			g_aEffect[nCntEffect].pos.z += g_aEffect[nCntEffect].move.z;
 
+			Enemy* pEnemy;//敵の情報へのポインタ
+			Player* pPlayer;
 			int nCntEnemy;
 
 			g_aEffect[nCntEffect].pos.x += g_aEffect[nCntEffect].move.x;
 			g_aEffect[nCntEffect].pos.y += g_aEffect[nCntEffect].move.y;
+
+
+			//敵の取得
+			pEnemy = GetEnemy();
+
+			pPlayer = GetPlayer();
 
 			pVtx += 4 * nCntEffect;
 

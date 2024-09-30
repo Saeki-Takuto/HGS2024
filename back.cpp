@@ -7,6 +7,7 @@
 
 #include "main.h"
 #include "back.h"
+#include "wave.h"
 
 //マクロ定義
 #define NUM_BG (2)//背景の数
@@ -134,7 +135,7 @@ void UpdateBack(void)
 
 	for (nCntBG = 0; nCntBG < NUM_BG; nCntBG++)
 	{
-		g_aPosTexU[nCntBG] += 0.0001f;
+		g_aPosTexU[nCntBG] += 0.0001f * (nCntBG)*GetWave();
 
 		//テクスチャ座標の設定
 		pVtx[0].tex = D3DXVECTOR2(g_aPosTexU[nCntBG], 0.0f);

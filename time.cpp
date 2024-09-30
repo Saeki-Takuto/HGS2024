@@ -7,6 +7,7 @@
 
 #include "time.h"
 #include "main.h"
+#include "wave.h"
 //ƒ}ƒNƒ’è‹`
 #define MAX_DIGIT (3)//Å‘åŒ…
 
@@ -117,6 +118,7 @@ void UpdateTime(void)
 		if (g_nTime != 0)
 		{
 			g_nTime--;
+			HitWave(1);
 		}
 	}
 

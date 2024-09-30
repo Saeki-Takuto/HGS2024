@@ -1,0 +1,36 @@
+﻿  back.cpp
+C:\Users\student\source\repos\20240709_2DGame\back.cpp(105,13): warning C4101: 'pVtx': ローカル変数は 1 度も使われていません。
+  main.cpp
+  player.cpp
+C:\Users\student\source\repos\20240709_2DGame\player.cpp(48,19): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+C:\Users\student\source\repos\20240709_2DGame\player.cpp(177,20): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+C:\Users\student\source\repos\20240709_2DGame\player.cpp(198,21): warning C4305: '=': 'double' から 'float' へ切り詰めます。
+  score.cpp
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(163,32): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(164,32): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(165,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(166,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(202,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(203,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(204,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\score.cpp(205,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+  time.cpp
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(142,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(143,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(144,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(145,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(209,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(210,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(211,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(212,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(248,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(249,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(250,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\20240709_2DGame\time.cpp(251,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+  ui.cpp
+  コード生成しています。
+  9 of 181 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  コード生成が終了しました。
+  20240709_2DGame.vcxproj -> C:\Users\student\source\repos\20240709_2DGame\20240709_2DGame.exe
