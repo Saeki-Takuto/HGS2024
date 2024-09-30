@@ -1,0 +1,32 @@
+﻿  back.cpp
+C:\Users\student\source\repos\HGS\back.cpp(104,13): warning C4101: 'pVtx': ローカル変数は 1 度も使われていません。
+  effect.cpp
+C:\Users\student\source\repos\HGS\effect.cpp(182,10): warning C4804: '>=': 演算中の 'bool' 型の使用方法が安全ではありません
+C:\Users\student\source\repos\HGS\effect.cpp(182,62): warning C4804: '>=': 演算中の 'bool' 型の使用方法が安全ではありません
+C:\Users\student\source\repos\HGS\effect.cpp(149,8): warning C4101: 'nCntEnemy': ローカル変数は 1 度も使われていません。
+  explosion.cpp
+C:\Users\student\source\repos\HGS\explosion.cpp(147,36): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\explosion.cpp(148,38): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\explosion.cpp(149,36): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\explosion.cpp(150,38): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+  game.cpp
+C:\Users\student\source\repos\HGS\game.cpp(87,6): warning C4101: 'nNum': ローカル変数は 1 度も使われていません。
+C:\Users\student\source\repos\HGS\game.cpp(89,6): warning C4101: 'nNum3': ローカル変数は 1 度も使われていません。
+  main.cpp
+  pause.cpp
+C:\Users\student\source\repos\HGS\pause.cpp(99,13): warning C4101: 'pVtx': ローカル変数は 1 度も使われていません。
+  time.cpp
+C:\Users\student\source\repos\HGS\time.cpp(140,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(141,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(142,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(143,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(207,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(208,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(209,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(210,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(246,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(247,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(248,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+C:\Users\student\source\repos\HGS\time.cpp(249,33): warning C4244: '引数': 'double' から 'FLOAT' への変換です。データが失われる可能性があります。
+  tutorial.cpp
+C:\Users\student\source\repos\HGS\tutorial.cpp(117,71): error C2065: 'nNum': 定義されていない識別子です。
